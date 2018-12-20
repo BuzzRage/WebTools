@@ -14,8 +14,8 @@ $lorem_ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecena
   
 if(isset($_GET['section'])){
 	switch($_GET['section']){		
-		case 'lorem':
-			include_once($views["lorem"]);
+		case 'rss':
+			include_once($views["rss"]);
 			break;	
 		default:
 			header('Location: '.$ht_links["home"]);

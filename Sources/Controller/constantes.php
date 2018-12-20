@@ -23,7 +23,7 @@
 						  			"conv"  => HTTP_DIR."View/convertissor.php",
 						  			"crypto"=> HTTP_DIR."View/cryptographie.php",
 						  			"home"  => HTTP_DIR."View/home.php",
-						  			"lorem" => HTTP_DIR."View/loremipsum.php",
+						  			"rss"   => HTTP_DIR."View/loremipsum.php",
 						  			"sdl"   => HTTP_DIR."View/filtrageSDL.php"
 						  	 );
 							 
@@ -35,6 +35,6 @@
 							  		"conv"  => HTTP_DIR."tools.php",
 							  		"crypto"=> HTTP_DIR."tools.php",
 							  		"home"	=> HTTP_DIR."index.php",
-							  		"lorem" => HTTP_DIR."loremipsum.php",
+							  		"rss"   => HTTP_DIR."loremipsum.php",
 							  		"sdl"   => HTTP_DIR."tools.php"
 							    );
