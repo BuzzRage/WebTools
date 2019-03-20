@@ -6,7 +6,8 @@
 				<a href="'.$ht_links["rss"].'?section=rss">Flux RSS</a>
 				<a href="'.$ht_links["sdl"].'?section=sdl">Filtrage SDL</a>
 				<a href="'.$ht_links["conv"].'?section=conv">Convertissor</a>
-				<a href="'.$ht_links["crypto"].'?section=crypto">Hashs</a>';
+				<a href="'.$ht_links["crypto"].'?section=crypto">Hashs</a>
+				<a href="'.$ht_links["wikay"].'?section=wikay">Wikay</a>';
 		?>
 	</div>
 

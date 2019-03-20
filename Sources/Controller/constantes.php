@@ -24,7 +24,8 @@
 						  			"crypto"=> HTTP_DIR."View/cryptographie.php",
 						  			"home"  => HTTP_DIR."View/home.php",
 						  			"rss"   => HTTP_DIR."View/loremipsum.php",
-						  			"sdl"   => HTTP_DIR."View/filtrageSDL.php"
+						  			"sdl"   => HTTP_DIR."View/filtrageSDL.php",
+						  			"wikay" => HTTP_DIR."View/wikay.php"
 						  	 );
 							 
 	$controllers = array(
@@ -36,5 +37,6 @@
 							  		"crypto"=> HTTP_DIR."tools.php",
 							  		"home"	=> HTTP_DIR."index.php",
 							  		"rss"   => HTTP_DIR."loremipsum.php",
-							  		"sdl"   => HTTP_DIR."tools.php"
+							  		"sdl"   => HTTP_DIR."tools.php",
+							  		"wikay" => HTTP_DIR."tools.php"
 							    );

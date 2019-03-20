@@ -13,6 +13,9 @@ if(isset($_GET['section'])){
 		case 'sdl':
 			include_once($views["sdl"]);
 			break;
+		case 'wikay':
+			include_once($views["wikay"]);
+			break;
 		default:
 			header('Location: '.$ht_links["home"]);
 			break;
