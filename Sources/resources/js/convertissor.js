@@ -41,6 +41,12 @@ function convertASCII(){
 
 function convertHex(){
 	var input = document.convform.hex.value;
+	
+	// Vérifie que input ne contient pas d'espaces
+	if(!/\s/.test(input)){
+		input = input.match(/.{1,2}/g).join(" ");
+	}
+	
 	if(input.length < 1){ 
 		emptyAll(); 
 		return;
