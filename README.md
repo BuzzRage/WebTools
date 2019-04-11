@@ -8,7 +8,7 @@ pour essayer des choses, pour construire mes propres outils etc...
 - Ajouter d'autres types de hashs
 - Faire une page centralisant les flux RSS suivis
 - Faire des publications (nécessite BDD ? )
-- Toggle affichange homemade/bootstrap
+- Toggle affichage homemade/bootstrap
 - Clicker Game en JS ?
 - WIKAY - What I Know About You: 
   - Faire page affichant toutes les infos du client (pour sensibiliser les gens sur les infos qu'il est possible d'obtenir)
