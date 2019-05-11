@@ -10,6 +10,7 @@ pour essayer des choses, pour construire mes propres outils etc...
 - Faire des publications (nécessite BDD ? )
 - Toggle affichage homemade/bootstrap
 - Clicker Game en JS ?
+- Faire un rendu de Markdown (in: txt format Markdown; out: Markdown avec CSS)
 - WIKAY - What I Know About You: 
   - Faire page affichant toutes les infos du client (pour sensibiliser les gens sur les infos qu'il est possible d'obtenir)
   - Faire une requête geotool pour localiser le client
