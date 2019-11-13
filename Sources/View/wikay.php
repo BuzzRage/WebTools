@@ -81,7 +81,13 @@
 
 				};
 				
-// 				p2.innerHTML = "Latitude: "+ info.latitude() +"<br>Longitude: "+ info.longitude();
+//  				p2.innerHTML = "Latitude: "+ info.latitude() +"<br>Longitude: "+ info.longitude();
+				p2.innerHTML = "Largeur écran: " + info.sizeScreenW() + "<br>"
+										 + "Hauteur écran: " + info.sizeScreenH() + "<br>"
+										 + "Vous êtes sur la page " + info.pageon() + " via " + info.referrer() + "<br>"
+										 + "Navigateur: " + info.browserVersion1b() + "<br>";
+										 
+				return info;
 			}
 		</script>
 
