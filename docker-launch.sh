@@ -21,6 +21,10 @@ function delete(){
   docker stop $1; docker rm $1;
 }
 
+function exist(){
+  docker ps --format '{{.Names}}' | grep -q "$1" && return 0 || return 1
+}
+
 if !(systemctl -q is-active docker)
 	then
 	echo "Veuillez démarrer le service Docker"
@@ -47,17 +51,29 @@ while [ ! -z "$1" ]; do
             delete "$DNAME"
             $0 "-r"
         else
-            delete "$2"
-            $0 "-n" "$2"
-            shift
+            `exist "$2"` && inlist=yes || inlist=no
+            if [ "$inlist" == "yes" ]; then
+                delete "$2"
+                $0 "-n" "$2"
+                shift
+            else
+                echo "Aucun conteneur lancé ne s'apppelle $2"
+                exit 1
+            fi
         fi
         ;;
       -d|--delete)
         if [ -z "$2" ];then
             delete "$DNAME"
         else
-            delete "$2"
-            shift
+            `exist "$2"` && inlist=yes || inlist=no
+            if [ "$inlist" == "yes" ]; then
+                delete "$2"
+                shift
+            else
+                echo "Aucun conteneur lancé ne s'apppelle $2"
+                exit 1
+            fi
         fi
         ;;
       *)
