@@ -43,6 +43,8 @@ while [ ! -z "$1" ]; do
         run "$DNAME"
         ;;
       -n|--name)
+        NAME="$2"
+        [[ $NAME =~ ^- ]] && echo "$NAME n'est pas un nom correct pour -n|--name" && exit 1
         run "$2"
         shift
         ;;
@@ -51,13 +53,15 @@ while [ ! -z "$1" ]; do
             delete "$DNAME"
             $0 "-r"
         else
-            `exist "$2"` && inlist=yes || inlist=no
+            NAME="$2"
+            [[ $NAME =~ ^- ]] && echo "$NAME n'est pas un nom correct pour -u|--update" && exit 1
+            `exist "$NAME"` && inlist=yes || inlist=no
             if [ "$inlist" == "yes" ]; then
-                delete "$2"
-                $0 "-n" "$2"
+                delete "$NAME"
+                $0 "-n" "$NAME"
                 shift
             else
-                echo "Aucun conteneur lancé ne s'apppelle $2"
+                echo "Aucun conteneur lancé ne s'apppelle $NAME"
                 exit 1
             fi
         fi
@@ -66,12 +70,14 @@ while [ ! -z "$1" ]; do
         if [ -z "$2" ];then
             delete "$DNAME"
         else
-            `exist "$2"` && inlist=yes || inlist=no
+            NAME="$2"
+            [[ $NAME =~ ^- ]] && echo "$NAME n'est pas un nom correct pour -u|--update" && exit 1
+            `exist "$NAME"` && inlist=yes || inlist=no
             if [ "$inlist" == "yes" ]; then
-                delete "$2"
+                delete "$NAME"
                 shift
             else
-                echo "Aucun conteneur lancé ne s'apppelle $2"
+                echo "Aucun conteneur lancé ne s'apppelle $NAME"
                 exit 1
             fi
         fi
