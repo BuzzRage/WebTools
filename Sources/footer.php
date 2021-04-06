@@ -7,8 +7,8 @@
 	<div id="player">
 		<div class="row">
 			<div class="col-lg-offset-3 col-lg-6">
-				<!--<button onclick="prevSong()">&#8810; Précedente</button>-->
-				<a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-chevron-left"></span> Précédent</a>
+<!-- 				<button onclick="prevSong()">&#8810; Précedente</button> -->
+				<a href="#" class="btn btn-sm btn-danger" onclick="prevSong()"><span class="glyphicon glyphicon-chevron-left"></span> Précédent</a>
 				<audio controls>
 					<source src="<?php echo $musics[0]; ?>" type="audio/mpeg">
 					Le lecteur musical ne fonctionne pas sur votre navigateur.
@@ -34,7 +34,7 @@
 					Le lecteur musical ne fonctionne pas sur votre navigateur.
 				</audio>			
 <!-- 				<button onclick="nextSong()"> Suivante &#8811;</button> -->
-				<a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-chevron-right"></span> Suivant</a>
+				<a href="#" class="btn btn-sm btn-danger" onclick="nextSong()"><span class="glyphicon glyphicon-chevron-right"></span> Suivant</a>
 			</div>
 		</div>
 	</div>
