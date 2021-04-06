@@ -48,7 +48,7 @@ while [ ! -z "$1" ]; do
             $0 "-r"
         else
             delete "$2"
-            $0 "-n $2"
+            $0 "-n" "$2"
             shift
         fi
         ;;
