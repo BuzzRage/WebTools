@@ -3,12 +3,13 @@
 function show_usage(){
   printf "Utilisation: $0 [options [paramètres]]\n" 
   printf "\n"
+  printf "\"WebTools\" est le nom par défaut.\n\n"
   printf "Options:\n"
-  printf "  -r|--run,                     Lance le site web dans un conteneur Docker. \"WebTools\" par défaut.\n"
-  printf "  -n|--name [nom du conteneur], Assigne un nom au conteneur. \"WebTools\" par défaut.\n"
-  printf "  -u|--update,                  Redémarre le conteneur pour actualiser les fichiers du site.\n"
-  printf "  -d|--delete,                  Stop et supprime le conteneur Docker.\n"
-  printf "  -h|--help,                    Affiche le menu d'aide.\n"
+  printf "  -r|--run                       : Lance le site web dans un conteneur Docker.\n"
+  printf "  -n|--name [nom du conteneur]   : Assigne un nom au conteneur.\n"
+  printf "  -u|--update [nom du conteneur] : Redémarre le conteneur pour actualiser les fichiers du site.\n"
+  printf "  -d|--delete [nom du conteneur] : Stop et supprime le conteneur Docker.\n"
+  printf "  -h|--help                      : Affiche le menu d'aide.\n"
   
   return 0  
 }
