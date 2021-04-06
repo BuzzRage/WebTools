@@ -31,14 +31,18 @@ SRC=$(pwd)/Sources
 DNAME="WebTools"
 
 while [ ! -z "$1" ]; do
-    if [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]];then
+    case "$1" in
+      -h|--help)
         show_usage
-    elif [[ "$1" == "-r" ]] || [[ "$1" == "--run" ]];then
+        ;;
+      -r|--run)
         run "$DNAME"
-    elif [[ "$1" == "-n" ]] || [[ "$1" == "--name" ]];then
+        ;;
+      -n|--name)
         run "$2"
         shift
-    elif [[ "$1" == "-u" ]] || [[ "$1" == "--update" ]];then
+        ;;
+      -u|--update)
         if [ -z "$2" ];then
             delete "$DNAME"
             $0 "-r"
@@ -47,16 +51,18 @@ while [ ! -z "$1" ]; do
             $0 "-n $2"
             shift
         fi
-    elif [[ "$1" == "-d" ]] || [[ "$1" == "--delete" ]];then
+        ;;
+      -d|--delete)
         if [ -z "$2" ];then
             delete "$DNAME"
         else
             delete "$2"
             shift
         fi
-    else
+        ;;
+      *)
         echo "Commande $1 inconnue."
         show_usage
-    fi
+    esac
     shift
 done
