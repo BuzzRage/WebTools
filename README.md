@@ -4,7 +4,23 @@ Ceci est un site personnel. Je compte m'en servir à but pédagogique pour me fo
 pour essayer des choses, pour construire mes propres outils etc...
 
 
-**TODO**:
+# Launcher
+  Utilisation:
+  ```
+  ./docker-launch.sh [options [paramètres]]
+  ```
+  
+  Nom par défaut: "WebTools".
+  
+  Options:
+  * `-r|--run` - Lance le site web dans un conteneur Docker.
+  * `-n|--name [nom du conteneur]` - Assigne un nom au conteneur.
+  * `-u|--update [nom du conteneur]` - Redémarre le conteneur pour actualiser les fichiers du site.
+  * `-d|--delete [nom du conteneur]` - Stop et supprime le conteneur Docker.
+  * `-h|--help`- Affiche le menu d'aide.
+
+
+# TODO
 - Ajouter d'autres types de hashs
 - Faire une page centralisant les flux RSS suivis
 - Faire des publications (nécessite BDD ? )
@@ -19,5 +35,5 @@ pour essayer des choses, pour construire mes propres outils etc...
 
 
 
-**ISSUES**:
+# ISSUES
 - No issues left
