@@ -27,6 +27,7 @@ pour essayer des choses, pour construire mes propres outils etc...
 - Toggle affichage homemade/bootstrap/lowtech (dithering et autres)
 - Clicker Game en JS ?
 - Faire un rendu de Markdown (in: txt format Markdown; out: Markdown avec CSS)
+- Ajouter page de fretboards pour travailler des gammes
 - Convertissor: 
   - 0xdb04 donne 219 4 alors que 56068 donne 0xdb04 (problème des caractères espaces)
 - WIKAY - What I Know About You: 
