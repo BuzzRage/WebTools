@@ -11,7 +11,7 @@
 			<h1>Home Page</h1>
 			<div class="row">
 				<div class="col-lg-offset-4 col-lg-4">
-					<h3>Page en construction .....</h3>
+					<h3>Page en construction ..... Bientôt de nouveaux projets</h3>
 				</div>
 			</div>
 		</header>

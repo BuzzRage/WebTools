@@ -17,10 +17,11 @@
 			<h2>Filtrage d'image en C en utilisant la Simple DirectMedia Layer</h2>
 			
 			<div class="col-lg-5">
-				Ce programme utilise la SDL 1.2 (portage vers SDL 2 en cours). Il a été réalisé sous linux et nécessite d'installer les paquets complémentaires suivants:
+				Ce programme utilise la SDL 2.0. Il a été réalisé sous linux et nécessite d'installer les paquets complémentaires suivants:
+
 				<ul>
-					<li>libsdl-image1.2</li>
-					<li>libsdl-mixer1.2</li>
+					<li>libsdl2-image-dev</li>
+					<li>libsdl2-dev</li>
 				</ul>
 				Il permet de réaliser des opérations simples de filtrage et de traitement d'image.
 			</div>
@@ -61,7 +62,7 @@
 			</div>
 	<!--		Aperçu GitHub:<br>                                                                                                                          -->
 	<!--		 <iframe src="https://www.github.com/BuzzRage/Filtrage_Image_SDL" align="middle" width="1500" height="500"  frameborder="1"> Wait ?</iframe>-->
-
+			<div><img src=<?php echo $imgs["lenna"] ?> /></div>
 			<div class="row">
 				<small class="pull-right">Lien <a href="https://www.github.com/BuzzRage/Filtrage_Image_SDL"> GitHub</a></small>
 			</div>

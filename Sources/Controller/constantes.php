@@ -5,8 +5,8 @@
 	define("HTTP_DIR", "./");
 	
 	$src_links   = array(
-										"conv"  		=> HTTP_DIR."resources/js/convertissor.js",
-						  			"css" 			=> HTTP_DIR."resources/css/style.css",
+									"conv"  	=> HTTP_DIR."resources/js/convertissor.js",
+						  			"css" 		=> HTTP_DIR."resources/css/style.css",
 						  			"bootstrap"	=> HTTP_DIR."resources/css/bootstrap/css/bootstrap.min.css"
 // 						  			"css"		=> HTTP_DIR."resources/css/bootstrap/css/bootstrap-theme.min.css"
 						  	 );
@@ -18,6 +18,8 @@
 										HTTP_DIR."resources/media/music/futur.mp3",
 										HTTP_DIR."resources/media/music/tentative hardcore.mp3",
 								 );
+	$imgs = array("lenna" => HTTP_DIR."resources/media/img/lenna-example.png");
+
               
 	$views 		   = array(
 						  			"conv"  => HTTP_DIR."View/convertissor.php",

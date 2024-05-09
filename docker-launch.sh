@@ -15,7 +15,7 @@ function show_usage(){
 }
 
 function run(){
-  docker run --name $1 -d -p 8082:80 --mount type=bind,source="$SRC",target=/var/www/html php:apache
+  docker run --name $1 -d -p 8081:80 --mount type=bind,source="$SRC",target=/var/www/html php:apache
 }
 
 function delete(){
