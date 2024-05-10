@@ -25,6 +25,7 @@
 						  			"conv"  => HTTP_DIR."View/convertissor.php",
 						  			"crypto"=> HTTP_DIR."View/cryptographie.php",
 						  			"home"  => HTTP_DIR."View/home.php",
+									"publi" => HTTP_DIR."View/publications.php",
 						  			"rss"   => HTTP_DIR."View/loremipsum.php",
 						  			"sdl"   => HTTP_DIR."View/filtrageSDL.php",
 						  			"wikay" => HTTP_DIR."View/wikay.php"
@@ -36,6 +37,7 @@
 
 	$ht_links    =  array(
 							  		"conv"  => HTTP_DIR."tools.php",
+									"publi" => HTTP_DIR."publications.php",
 							  		"crypto"=> HTTP_DIR."tools.php",
 							  		"home"	=> HTTP_DIR."index.php",
 							  		"rss"   => HTTP_DIR."loremipsum.php",
