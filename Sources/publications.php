@@ -2,6 +2,6 @@
 
 include_once("./Controller/constantes.php");
 
-include_once($views["rss"]);
+include_once($views["publi"]);
 
 ?>

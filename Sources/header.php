@@ -3,7 +3,7 @@
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
 		<?php 
 			echo '	<a href="'.$ht_links["home"].'?section=home">Home</a>
-				<a href="'.$ht_links["publi"].'?section=rss">Publications</a>
+				<a href="'.$ht_links["publi"].'?section=publi">Publications</a>
 				<a href="'.$ht_links["rss"].'?section=rss">Flux RSS</a>
 				<a href="'.$ht_links["sdl"].'?section=sdl">Filtrage SDL</a>
 				<a href="'.$ht_links["conv"].'?section=conv">Convertissor</a>
